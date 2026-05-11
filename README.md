@@ -2,7 +2,7 @@
 
 | №  | Описание | Пример кода |
 | -- | ----------- | ----------- |
-| 1. Создание классов  | [Описание](https://github.com/Artomaniia/2ob_POO/blob/create-classes/README.md) | [Пример Кода](https://github.com/Artomaniia/2ob_POO/blob/create-classes/class_creation.py) |
+| 1. Создание классов  | [Описание. Лелло Андрей](https://github.com/Artomaniia/2ob_POO/blob/create-classes/README.md) | [Пример Кода](https://github.com/Artomaniia/2ob_POO/blob/create-classes/class_creation.py) |
 | 2. Создание объектов  | Paragraph | Text |
 | 3. Статический класс  | Paragraph | Text |
 | 4. Статический метод  | Paragraph | Text |
