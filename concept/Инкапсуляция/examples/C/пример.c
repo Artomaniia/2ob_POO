@@ -3,10 +3,17 @@
 
 /*
  * Демонстрация инкапсуляции на языке C.
- * В C нет встроенной поддержки ООП,
- * поэтому инкапсуляция реализуется через структуры и функции.
+ *
+ * В языке C отсутствуют встроенные механизмы
+ * объектно-ориентированного программирования,
+ * поэтому инкапсуляция реализуется через структуры
+ * и функции для работы с данными.
  */
 
+
+/*
+ * Структура банковского счёта.
+ */
 typedef struct {
     char owner[50];
     double balance;
@@ -14,16 +21,26 @@ typedef struct {
 
 
 /*
- * Создание банковского счёта
+ * Инициализация банковского счёта.
+ *
+ * account — указатель на структуру счёта
+ * owner — имя владельца
+ * balance — начальный баланс
  */
-void init_account(BankAccount *account, const char *owner, double balance) {
+void init_account(
+    BankAccount *account,
+    const char *owner,
+    double balance
+) {
     strcpy(account->owner, owner);
     account->balance = balance;
 }
 
 
 /*
- * Получение баланса
+ * Получение текущего баланса.
+ *
+ * Возвращает значение баланса счёта.
  */
 double get_balance(BankAccount *account) {
     return account->balance;
@@ -31,44 +48,88 @@ double get_balance(BankAccount *account) {
 
 
 /*
- * Пополнение счёта
+ * Пополнение банковского счёта.
+ *
+ * amount — сумма пополнения.
  */
 void deposit(BankAccount *account, double amount) {
+
     if (amount > 0) {
         account->balance += amount;
-        printf("Счёт пополнен на %.2f\n", amount);
+
+        printf(
+            "Счёт пополнен на %.2f\n",
+            amount
+        );
     } else {
-        printf("Сумма должна быть положительной\n");
+        printf(
+            "Сумма должна быть положительной\n"
+        );
     }
 }
 
 
 /*
- * Снятие средств
+ * Снятие средств со счёта.
+ *
+ * amount — сумма снятия.
  */
 void withdraw(BankAccount *account, double amount) {
-    if (amount > 0 && amount <= account->balance) {
+
+    if (
+        amount > 0 &&
+        amount <= account->balance
+    ) {
         account->balance -= amount;
-        printf("Снято %.2f\n", amount);
+
+        printf(
+            "Снято %.2f\n",
+            amount
+        );
     } else {
-        printf("Недостаточно средств\n");
+        printf(
+            "Недостаточно средств\n"
+        );
     }
 }
 
 
+/*
+ * Точка входа в программу.
+ */
 int main() {
 
+    /* Создание банковского счёта */
     BankAccount account;
 
-    init_account(&account, "Алексей", 1000);
+    /* Инициализация счёта */
+    init_account(
+        &account,
+        "Алексей",
+        1000
+    );
 
-    printf("Текущий баланс: %.2f\n", get_balance(&account));
+    /* Вывод текущего баланса */
+    printf(
+        "Текущий баланс: %.2f\n",
+        get_balance(&account)
+    );
 
+    /* Пополнение счёта */
     deposit(&account, 500);
-    printf("Баланс после пополнения: %.2f\n", get_balance(&account));
 
+    printf(
+        "Баланс после пополнения: %.2f\n",
+        get_balance(&account)
+    );
+
+    /* Снятие средств */
     withdraw(&account, 300);
-    printf("Баланс после снятия: %.2f\n", get_balance(&account));
+
+    printf(
+        "Баланс после снятия: %.2f\n",
+        get_balance(&account)
+    );
 
     return 0;
 }
