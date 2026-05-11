@@ -9,7 +9,7 @@
 | 5. Аксессоры (getter, setter, deliter) | Paragraph | Text |
 | 6. Инкапсуляция  | Paragraph | Text |
 | 7. Наследование  | Paragraph | Text |
-| 8. Полиморфизм  | Header | Title |
+| 8. Полиморфизм  | [Описание](https://github.com/Artomaniia/2ob_POO/blob/concept/polymorphism/polymorphism/polymorphism.md) | [Примеры кода](https://github.com/Artomaniia/2ob_POO/tree/concept/polymorphism/polymorphism/examples) |
 | 9. Интерфейс  | [описание](#9-интерфейс)  | [ссылка](https://gist.github.com/nzhukov/8ef20df17113db105045bfdbabb2d9e1#file-interface-py) |
 | 10. Множественное наследование  | Paragraph | Text |
 | 11. Примесь (mixin)  | Paragraph | Text |
