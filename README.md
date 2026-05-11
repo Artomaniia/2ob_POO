@@ -6,7 +6,7 @@
 | 2. Создание объектов  | Paragraph | Text |
 | 3. Статический класс  | Paragraph | Text |
 | 4. Статический метод  | Paragraph | Text |
-| 5. Аксессоры (getter, setter, deliter) | Paragraph | Text |
+| 5. Аксессоры (getter, setter, deliter) | [Описание. Тоголмачева Полина](https://github.com/Artomaniia/2ob_POO/blob/concept/accessories/accessories/accessories.md) | [Примеры кода](https://github.com/Artomaniia/2ob_POO/tree/concept/accessories/accessories/examples) |
 | 6. Инкапсуляция  | [Описание. Жукова Таисия](https://github.com/Artomaniia/2ob_POO/blob/concept/encapsulation/encapsulation/encapsulation.md) | [Примеры кода](https://github.com/Artomaniia/2ob_POO/tree/concept/encapsulation/encapsulation/examples) |
 | 7. Наследование  | Paragraph | Text |
 | 8. Полиморфизм  | [Описание. Чудная Софья](https://github.com/Artomaniia/2ob_POO/blob/concept/polymorphism/polymorphism/polymorphism.md) | [Примеры кода](https://github.com/Artomaniia/2ob_POO/tree/concept/polymorphism/polymorphism/examples) |
