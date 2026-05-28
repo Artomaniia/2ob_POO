@@ -13,7 +13,7 @@
 | 9. Интерфейс  | [описание](#9-интерфейс)  | [ссылка](https://gist.github.com/nzhukov/8ef20df17113db105045bfdbabb2d9e1#file-interface-py) |
 | 10. Множественное наследование  | Paragraph | Text |
 | 11. Примесь (mixin)  | Paragraph | Text |
-| 12. Перегрузка  | Paragraph | Text |
+| 12. Перегрузка | [Описание. Бойко Мария](contrib/overload/overload.md) | [Примеры кода](contrib/overload/examples) |
 | * 13. Абстракция  | Paragraph | Text |
 | * 14. Ассоциация  | Paragraph | Text |
 | * 15. Композиция  | Paragraph | Text |
