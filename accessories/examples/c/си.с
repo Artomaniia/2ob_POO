@@ -1,0 +1,81 @@
+'''c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Определение структуры
+typedef struct {
+    char* _name;  // приватное поле (по соглашению)
+    int _age;
+} User;
+
+// Getter для name
+const char* user_get_name(const User* user) {
+    if (user && user->_name) {
+        return user->_name;
+    }
+    return "Unknown";
+}
+
+// Setter для name
+void user_set_name(User* user, const char* name) {
+    if (user && name) {
+        free(user->_name);                    // освобождаем старую память
+        user->_name = strdup(name);           // копируем строку
+    }
+}
+
+// Getter для age
+int user_get_age(const User* user) {
+    return user ? user->_age : -1;
+}
+
+// Setter для age с валидацией
+int user_set_age(User* user, int age) {
+    if (user && age >= 0 && age <= 120) {
+        user->_age = age;
+        return 1;  // успех
+    }
+    return 0;      // ошибка
+}
+
+// Функция "удаления" возраста (аналог deleter)
+void user_delete_age(User* user) {
+    if (user) {
+        printf("Информация о возрасте пользователя %s удалена.\n", 
+               user_get_name(user));
+        user->_age = -1;  // или можно использовать флаг
+    }
+}
+
+// Конструктор
+User* user_create(const char* name, int age) {
+    User* user = (User*)malloc(sizeof(User));
+    if (user) {
+        user->_name = strdup(name ? name : "Unknown");
+        user->_age = (age >= 0 && age <= 120) ? age : 0;
+    }
+    return user;
+}
+
+// Деструктор
+void user_destroy(User* user) {
+    if (user) {
+        free(user->_name);
+        free(user);
+    }
+}
+
+int main() {
+    User* user = user_create("алексей", 25);
+    
+    printf("Имя: %s\n", user_get_name(user));
+    user_set_name(user, "Алексей");
+    printf("Имя: %s\n", user_get_name(user));
+    printf("Возраст: %d\n", user_get_age(user));
+    
+    user_delete_age(user);
+    
+    user_destroy(user);
+    return 0;
+}
