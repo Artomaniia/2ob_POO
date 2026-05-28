@@ -3,7 +3,7 @@
 | №  | Описание | Пример кода |
 | -- | ----------- | ----------- |
 | 1. Создание классов  | [Описание. Лелло Андрей](https://github.com/Artomaniia/2ob_POO/blob/create-classes/README.md) | [Пример Кода](https://github.com/Artomaniia/2ob_POO/blob/create-classes/class_creation.py) |
-| 2. Создание объектов  | Paragraph | Text |
+| 2. Создание объектов  | [Описание. Махов Владислав](https://github.com/Artomaniia/2ob_POO/blob/concept/creating_objects/object_creation/object_creation.md) | [Примеры кода](https://github.com/Artomaniia/2ob_POO/blob/concept/creating_objects/README.md) |
 | 3. Статический класс  | Paragraph | Text |
 | 4. Статический метод  | [Описание. Гриненко Никита](https://github.com/Artomaniia/2ob_POO/blob/concept/static-method/static_method/static_method.md) | [Примеры кода](https://github.com/Artomaniia/2ob_POO/tree/concept/static-method/static_method/examples) |
 | 5. Аксессоры (getter, setter, deliter) | [Описание. Тоголмачева Полина](https://github.com/Artomaniia/2ob_POO/blob/main/accessories/accessories.md) | [Примеры кода](https://github.com/Artomaniia/2ob_POO/tree/main/accessories/examples) |
