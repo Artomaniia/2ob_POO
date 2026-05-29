@@ -1,0 +1,18 @@
+"""
+Пример: создание объектов в Python
+Автор: Бойко Мария
+"""
+
+class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def info(self):
+        return f"Машина: {self.brand}, цвет: {self.color}"
+
+car1 = Car("Toyota", "Красный")
+car2 = Car("BMW", "Чёрный")
+
+print(car1.info())
+print(car2.info())
